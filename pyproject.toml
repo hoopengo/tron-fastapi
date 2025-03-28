@@ -1,0 +1,25 @@
+[project]
+name = "tron-fastapi"
+version = "1.0.0"
+description = "Микросервис для получения информации об адресах в сети Tron" 
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.15.1",
+    "asyncpg>=0.30.0",
+    "fastapi>=0.115.12",
+    "httpx>=0.28.1",
+    "psycopg2-binary>=2.9.10",
+    "pydantic>=2.11.0",
+    "pydantic-settings>=2.8.1",
+    "python-dotenv>=1.1.0",
+    "sqlalchemy>=2.0.40",
+    "tronpy>=0.5.0",
+    "uvicorn>=0.34.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+    "pytest-mock>=3.14.0",
+]
